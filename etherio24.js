@@ -12,6 +12,7 @@
 Etherio24 = function(ip, port) {
     var dgram = require('dgram');
 
+    // should throw an error if there is no IP address or hosrt name
     this.ip   = ip;             // Can be name or ipv4 address
     this.port = typeof b !== 'undefined' ? port : 2424;         // port number
 
@@ -107,7 +108,12 @@ Etherio24.prototype.ping = function() {
 	return true;
 };
 
+Etherio24.prototype.init = function() {
+	
+};
+
 module.exports.Etherio24 = Etherio24;
+module.exports.init = init;
 module.exports.on = on;
 module.exports.off = off;
 module.exports.ping = ping;
