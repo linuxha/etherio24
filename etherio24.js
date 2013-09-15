@@ -9,7 +9,7 @@
 ** @returns	new etherio object
 */
 
-Etherio = function(ip, port) {
+Etherio24 = function(ip, port) {
     var dgram = require('dgram');
 
     this.ip   = ip;             // Can be name or ipv4 address
